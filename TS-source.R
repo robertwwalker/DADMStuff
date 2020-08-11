@@ -1,0 +1,6 @@
+install.packages("magrittr")
+install.packages("skimr")
+install.packages("tidyverse")
+install.packages("forecast")
+install.packages("urca")
+install.packages("hrbrthemes")
