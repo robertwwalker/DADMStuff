@@ -4,6 +4,8 @@ xtsum <- function(formula, data) {
   pform <- terms(formula, data=data)
   unit <- pform[[2]]
   vars <- attr(pform, "term.labels")
+  # Add data.frame to strip other attributes.
+  data <- data.frame(data)
   cls <- sapply(data, class)
   data <- data %>% select(which(cls %in% c("numeric","integer")))
   varnames <- intersect(names(data),vars)
