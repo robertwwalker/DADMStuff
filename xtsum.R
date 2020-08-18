@@ -5,7 +5,7 @@ xtsum <- function(formula, data) {
   unit <- pform[[2]]
   vars <- attr(pform, "term.labels")
   cls <- sapply(data, class)
-  data <- data %>% select(which(cls%in%c("numeric","integer")))
+  data <- data %>% select(which(cls %in% c("numeric","integer")))
   varnames <- intersect(names(data),vars)
   sumfunc <- function(data=data, varname, unit) {
     loc.unit <- enquo(unit)
