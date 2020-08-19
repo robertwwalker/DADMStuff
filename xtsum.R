@@ -6,9 +6,13 @@ xtsum <- function(formula, data) {
   vars <- attr(pform, "term.labels")
   # Add data.frame to strip other attributes.
   data <- data.frame(data)
+  # Get classes of the variables
   cls <- sapply(data, class)
+  # 8.18.2020 adapted the below line to handle factors and characters by selecting unit
   data <- data %>% select(which(cls %in% c("numeric","integer")),unit)
+  # Get the variable names
   varnames <- intersect(names(data),vars)
+  # The actual summary function for some variable
   sumfunc <- function(data=data, varname, unit) {
     loc.unit <- enquo(unit)
     varname <- ensym(varname)
