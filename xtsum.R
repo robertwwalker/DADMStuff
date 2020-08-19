@@ -7,7 +7,7 @@ xtsum <- function(formula, data) {
   # Add data.frame to strip other attributes.
   data <- data.frame(data)
   cls <- sapply(data, class)
-  data <- data %>% select(which(cls %in% c("numeric","integer")))
+  data <- data %>% select(which(cls %in% c("numeric","integer")),unit)
   varnames <- intersect(names(data),vars)
   sumfunc <- function(data=data, varname, unit) {
     loc.unit <- enquo(unit)
