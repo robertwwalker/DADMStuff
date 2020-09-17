@@ -1,0 +1,33 @@
+---
+title: "Graphing"
+author: "YOUR NAME HERE"
+date: "9/17/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Bond Funds
+
+Let us first load libraries and the tidyverse.
+
+```{r}
+library(tidyverse)
+library(skimr)
+Bonds <- read.csv(url("https://raw.githubusercontent.com/robertwwalker/DADMStuff/master/BondFunds.csv"))
+```
+
+## Markdown has many options
+
+I will not explore them here.  The key thing is that I now have data and libraries.  If I want to use any more, I will have to call them and make sure that I call them before I use them.  Think of the markdown as a robot.
+
+# Adding Graphs
+
+Insert a chunk [Code > Insert chunk].  The [slides](https://rww.science/xaringan/flipbookgg/index.html) all reference *Bonds* and my graphics must too.
+
+```{r}
+ggplot(Bonds, aes(x=Risk)) + geom_bar()
+```
+
