@@ -1,0 +1,73 @@
+---
+title: "Portland AirBNB"
+author: "RWW"
+date: "9/18/2020"
+output: 
+   html_document:
+     self_contained: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+## Portland AirBNB Prices
+
+The data are [available here.](http://insideairbnb.com/get-the-data.html)
+
+```{r}
+listings <- read.csv(url("http://data.insideairbnb.com/united-states/or/portland/2020-07-07/visualisations/listings.csv"))
+summary(listings)
+```
+
+# Price by Room Type
+
+```{r}
+ggplot(listings) +
+ aes(x = price) +
+ geom_density(adjust = 1L, fill = "#0c4c8a") +
+ theme_minimal() +
+ facet_wrap(vars(room_type))
+```
+
+# Neighbourhoods
+
+```{r}
+ggplot(listings) +
+ aes(x = price) +
+ geom_density(adjust = 1L, fill = "#0c4c8a") +
+ theme_minimal() +
+ facet_wrap(vars(neighbourhood))
+```
+
+# Filter the Pearl
+
+```{r}
+listings %>% filter(neighbourhood=="Pearl") %>% ggplot() +
+ aes(x = price) +
+ geom_density(adjust = 1L, fill = "#0c4c8a") +
+ theme_minimal() +
+ facet_wrap(vars(room_type))
+```
+```{r}
+listings %>% filter(neighbourhood %in% c("Pearl","Woodstock","Lloyd District")) %>% ggplot() +
+ aes(x = price) +
+ geom_density(adjust = 1L, fill = "#0c4c8a") +
+ theme_minimal() +
+ facet_wrap(vars(neighbourhood))
+```
+
+# A skim
+
+What's the median and the middle 50% of prices by `neighbourhood` and `room_type`?
+
+```{r}
+library(skimr)
+listings %>% group_by(neighbourhood, room_type) %>% skim(price) 
+```
+
+```{r}
+listings %>% group_by(neighbourhood, room_type) %>% summarise(Price.Median = median(price), Price.Q1 = quantile(price, probs=0.25, na.rm=TRUE), Q3 = quantile(price, probs=0.75, na.rm=TRUE)) %>% knitr::kable()
+```
+
