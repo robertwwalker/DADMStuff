@@ -1,3 +1,4 @@
+# R Code for resid.plotter that plots the residuals from a model object.
 library(tidyverse); library(patchwork)
 resid.plotter <- function(model) {
   r1 <- residuals(model)
@@ -13,3 +14,4 @@ resid.plotter <- function(model) {
   retplot <- retplot + plot_annotation(title=rcall)
  return(retplot)
 }
+# End of R Code
