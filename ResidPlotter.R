@@ -3,7 +3,7 @@ library(tidyverse); library(patchwork)
 resid.plotter <- function(model) {
   r1 <- residuals(model)
   fv = fitted.values(model)
-  sv <- paste0("Shapiro p-value: ",round(shapiro.test(Model1$residuals)$p.value, 5))
+  sv <- paste0("Shapiro p-value: ",round(shapiro.test(model$residuals)$p.value, 5))
   rcall <- deparse(model$call)
   data <- data.frame(Residuals = r1, Fitted.Values = fv) %>% mutate(y = Residuals + Fitted.Values)
   plot1 <-  data %>% ggplot() + aes(x=Residuals) + geom_density()
