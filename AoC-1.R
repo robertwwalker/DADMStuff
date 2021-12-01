@@ -2002,4 +2002,7 @@ AoC1 <- c(199L,
           2332L,
           2338L,
           2341L)
+# Puzzle 1
 table(diff(AoC1) > 0)
+# Puzzle 2
+table(diff(zoo::rollsum(AoC1, k=3)) > 0)
