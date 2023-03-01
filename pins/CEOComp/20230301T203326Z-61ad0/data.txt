@@ -1,0 +1,9 @@
+file: CEOComp.csv
+file_size: 6849
+pin_hash: 61ad05e484aca98f
+type: csv
+title: 'CEOComp: a pinned 101 x 6 data frame'
+description: ~
+tags: ~
+created: 20230301T203326Z
+api_version: 1.0

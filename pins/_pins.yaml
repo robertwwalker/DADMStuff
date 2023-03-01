@@ -2,8 +2,18 @@ AirlineCosts:
 - AirlineCosts/20230301T201044Z-85a99/
 BondFunds:
 - BondFunds/20230301T201449Z-f4f05/
+CEOComp:
+- CEOComp/20230301T203326Z-61ad0/
 Churn:
 - Churn/20230301T201052Z-2e797/
+Concrete:
+- Concrete/20230301T203316Z-16e9a/
+DiscWH:
+- DiscWH/20230301T203349Z-c0d0b/
+Discrimination:
+- Discrimination/20230301T203256Z-8e1f1/
+FastFood:
+- FastFood/20230301T203611Z-cdd76/
 Fertilizer:
 - Fertilizer/20230301T201207Z-bdbdd/
 GamingDevices:
@@ -14,6 +24,8 @@ ISQ99_Essex:
 - ISQ99_Essex/20230301T201122Z-af663/
 MFPerform:
 - MFPerform/20230301T201113Z-310db/
+OregonSalaries:
+- OregonSalaries/20230301T203426Z-a8bbf/
 Redlining:
 - Redlining/20230301T201058Z-1617b/
 UCB.Micro:
@@ -26,3 +38,9 @@ dogs:
 - dogs/20230301T201147Z-48426/
 eu_balance:
 - eu_balance/20230301T201137Z-8843b/
+pensions:
+- pensions/20230301T202857Z-66ab3/
+trade:
+- trade/20230301T202909Z-b420b/
+women_research:
+- women_research/20230301T202928Z-38eca/

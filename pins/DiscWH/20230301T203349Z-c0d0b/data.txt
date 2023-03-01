@@ -1,0 +1,9 @@
+file: DiscWH.csv
+file_size: 35687
+pin_hash: c0d0bbff05be3d03
+type: csv
+title: 'DiscWH: a pinned 777 x 6 data frame'
+description: ~
+tags: ~
+created: 20230301T203349Z
+api_version: 1.0

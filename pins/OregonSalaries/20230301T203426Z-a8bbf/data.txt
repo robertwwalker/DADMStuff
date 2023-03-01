@@ -1,0 +1,9 @@
+file: OregonSalaries.csv
+file_size: 743
+pin_hash: a8bbf49597506932
+type: csv
+title: 'OregonSalaries: a pinned 32 x 3 data frame'
+description: ~
+tags: ~
+created: 20230301T203426Z
+api_version: 1.0

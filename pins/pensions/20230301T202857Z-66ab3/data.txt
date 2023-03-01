@@ -1,0 +1,9 @@
+file: pensions.csv
+file_size: 806
+pin_hash: 66ab3273979c6276
+type: csv
+title: 'pensions: a pinned 35 x 3 data frame'
+description: ~
+tags: ~
+created: 20230301T202857Z
+api_version: 1.0

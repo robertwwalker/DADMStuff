@@ -1,0 +1,9 @@
+file: women_research.csv
+file_size: 2109
+pin_hash: 38ecac6524386b74
+type: csv
+title: 'women_research: a pinned 60 x 3 data frame'
+description: ~
+tags: ~
+created: 20230301T202928Z
+api_version: 1.0

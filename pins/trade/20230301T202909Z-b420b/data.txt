@@ -1,0 +1,9 @@
+file: trade.csv
+file_size: 701
+pin_hash: b420be4db199f62b
+type: csv
+title: 'trade: a pinned 22 x 3 data frame'
+description: ~
+tags: ~
+created: 20230301T202909Z
+api_version: 1.0

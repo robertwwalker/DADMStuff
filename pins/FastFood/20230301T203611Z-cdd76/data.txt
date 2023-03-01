@@ -1,0 +1,9 @@
+file: FastFood.csv
+file_size: 46785
+pin_hash: cdd761350f1a3cb1
+type: csv
+title: 'FastFood: a pinned 515 x 17 data frame'
+description: ~
+tags: ~
+created: 20230301T203611Z
+api_version: 1.0

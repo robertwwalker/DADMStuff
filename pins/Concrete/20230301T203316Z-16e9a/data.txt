@@ -1,0 +1,9 @@
+file: Concrete.csv
+file_size: 235
+pin_hash: 16e9ae5f011ce9a3
+type: csv
+title: 'Concrete: a pinned 12 x 4 data frame'
+description: ~
+tags: ~
+created: 20230301T203316Z
+api_version: 1.0
