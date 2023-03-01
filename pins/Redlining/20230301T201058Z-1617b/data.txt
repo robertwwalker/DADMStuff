@@ -1,0 +1,9 @@
+file: Redlining.csv
+file_size: 1852
+pin_hash: 1617b003f22c724a
+type: csv
+title: 'Redlining: a pinned 47 x 9 data frame'
+description: ~
+tags: ~
+created: 20230301T201058Z
+api_version: 1.0

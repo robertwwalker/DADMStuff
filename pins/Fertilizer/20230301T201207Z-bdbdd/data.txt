@@ -1,0 +1,9 @@
+file: Fertilizer.csv
+file_size: 1648
+pin_hash: bdbddf6851b6bdc7
+type: csv
+title: 'Fertilizer: a pinned 50 x 4 data frame'
+description: ~
+tags: ~
+created: 20230301T201207Z
+api_version: 1.0

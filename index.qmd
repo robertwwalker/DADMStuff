@@ -1,0 +1,59 @@
+---
+title: "Pins"
+bibliography: "bibliography.bib"
+nocite: |
+     @*
+author: "Robert W. Walker"
+format: 
+   html:
+     self-contained: true
+     self-contained-math: true
+     code-fold: true
+     code-copy: hover
+     code-block-border-left: true
+     df-print: paged
+     embed-resources: true
+     fig-format: retina
+     footnotes-hover: true
+     html-math-method: katex
+     mainfont: Playfair Display
+     toc: true
+     toc-title: Navigation
+     theme: simplex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message=FALSE, warning=FALSE)
+```
+
+Creating the pins for this repository.
+
+```
+board <- board_temp(versioned = TRUE)
+```
+
+
+## The Data
+
+```{r}
+library(tidyverse)
+Files <- dir()
+Files
+```
+
+
+## A Look at the Data
+
+```{r}
+library(DT)
+Files.df <- data.frame(Files=Files) %>% mutate(link=paste0(paste0('<a href=',paste0("\"https://github.com/robertwwalker/DADMStuff/raw/master/",Files,"\"", sep=""),' > ', sep=""),Files,'</a>',sep=""))
+datatable(Files.df, escape = FALSE)
+```
+
+
+# References
+
+```{r}
+knitr::write_bib(names(sessionInfo()$otherPkgs), file="bibliography.bib")
+```
+

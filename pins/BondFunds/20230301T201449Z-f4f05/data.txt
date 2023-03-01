@@ -1,0 +1,9 @@
+file: BondFunds.csv
+file_size: 13745
+pin_hash: f4f059714c7a573a
+type: csv
+title: 'BondFunds: a pinned 184 x 9 data frame'
+description: ~
+tags: ~
+created: 20230301T201449Z
+api_version: 1.0

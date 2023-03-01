@@ -1,0 +1,9 @@
+file: dogs.csv
+file_size: 312
+pin_hash: 4842600752e2393f
+type: csv
+title: 'dogs: a pinned 10 x 3 data frame'
+description: ~
+tags: ~
+created: 20230301T201147Z
+api_version: 1.0

@@ -1,0 +1,9 @@
+file: Churn.csv
+file_size: 1209972
+pin_hash: 2e79750fc0fe40e5
+type: csv
+title: 'Churn: a pinned 7043 x 21 data frame'
+description: ~
+tags: ~
+created: 20230301T201052Z
+api_version: 1.0

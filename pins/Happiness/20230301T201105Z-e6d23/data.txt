@@ -1,0 +1,9 @@
+file: Happiness.csv
+file_size: 14446
+pin_hash: e6d23760a5025b2d
+type: csv
+title: 'Happiness: a pinned 146 x 14 data frame'
+description: ~
+tags: ~
+created: 20230301T201105Z
+api_version: 1.0

@@ -1,0 +1,9 @@
+file: ISQ99_Essex.csv
+file_size: 211730
+pin_hash: af6638b16a0ad172
+type: csv
+title: 'ISQ99_Essex: a pinned 3222 x 21 data frame'
+description: ~
+tags: ~
+created: 20230301T201122Z
+api_version: 1.0

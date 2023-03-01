@@ -1,0 +1,9 @@
+file: MFPerform.csv
+file_size: 57411
+pin_hash: 310dbc43ed91d3ae
+type: csv
+title: 'MFPerform: a pinned 540 x 10 data frame'
+description: ~
+tags: ~
+created: 20230301T201113Z
+api_version: 1.0

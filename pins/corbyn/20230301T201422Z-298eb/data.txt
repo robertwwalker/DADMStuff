@@ -1,0 +1,9 @@
+file: corbyn.csv
+file_size: 149
+pin_hash: 298eb2a893688d30
+type: csv
+title: 'corbyn: a pinned 6 x 2 data frame'
+description: ~
+tags: ~
+created: 20230301T201422Z
+api_version: 1.0

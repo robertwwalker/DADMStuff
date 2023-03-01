@@ -1,0 +1,9 @@
+file: eu_balance.csv
+file_size: 8349
+pin_hash: 8843b39ad00b4094
+type: csv
+title: 'eu_balance: a pinned 266 x 4 data frame'
+description: ~
+tags: ~
+created: 20230301T201137Z
+api_version: 1.0

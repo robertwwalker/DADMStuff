@@ -1,0 +1,9 @@
+file: UCB.csv
+file_size: 103263
+pin_hash: ae73042dbe2fa397
+type: csv
+title: 'UCB.Micro: a pinned 4526 x 3 data frame'
+description: ~
+tags: ~
+created: 20230301T201154Z
+api_version: 1.0

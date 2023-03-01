@@ -1,0 +1,9 @@
+file: GamingDevices.csv
+file_size: 697
+pin_hash: 957f67c58ad72d35
+type: csv
+title: 'GamingDevices: a pinned 36 x 5 data frame'
+description: ~
+tags: ~
+created: 20230301T201128Z
+api_version: 1.0

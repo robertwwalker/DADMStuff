@@ -1,0 +1,9 @@
+file: AirlineCosts.csv
+file_size: 4748
+pin_hash: 85a9981f459f63c8
+type: csv
+title: 'AirlineCosts: a pinned 31 x 11 data frame'
+description: ~
+tags: ~
+created: 20230301T201044Z
+api_version: 1.0

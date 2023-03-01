@@ -1,0 +1,9 @@
+file: brexit.csv
+file_size: 1506
+pin_hash: 6725b3943764ac66
+type: csv
+title: 'brexit: a pinned 85 x 3 data frame'
+description: ~
+tags: ~
+created: 20230301T201437Z
+api_version: 1.0
