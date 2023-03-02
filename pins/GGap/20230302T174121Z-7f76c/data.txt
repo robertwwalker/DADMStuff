@@ -1,0 +1,9 @@
+file: GGap.csv
+file_size: 392
+pin_hash: 7f76c42b62a9f3d5
+type: csv
+title: 'GGap: a pinned 16 x 2 data frame'
+description: ~
+tags: ~
+created: 20230302T174121Z
+api_version: 1.0

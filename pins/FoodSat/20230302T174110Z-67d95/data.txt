@@ -1,0 +1,9 @@
+file: FoodSat.csv
+file_size: 559
+pin_hash: 67d9597bc2478676
+type: csv
+title: 'FoodSat: a pinned 100 x 1 data frame'
+description: ~
+tags: ~
+created: 20230302T174110Z
+api_version: 1.0

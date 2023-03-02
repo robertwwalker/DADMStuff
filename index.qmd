@@ -51,7 +51,11 @@ datatable(Files.df, escape = FALSE)
 ```
 I want to make these files accessible.  Apparently, the way to do this is `pins`.
 
+I am going to put the pins on github.  The repository will be: `https://raw.githubcontent.com/robertwwalker/DADMStuff/pins/`.  Here is a list of the pins.
 
+```{r}
+dir("pins/")
+```
 
 # References
 

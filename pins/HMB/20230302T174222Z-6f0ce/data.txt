@@ -1,0 +1,9 @@
+file: HMB.csv
+file_size: 970
+pin_hash: 6f0ce725f499635c
+type: csv
+title: 'HMB: a pinned 60 x 2 data frame'
+description: ~
+tags: ~
+created: 20230302T174222Z
+api_version: 1.0

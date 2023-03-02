@@ -1,0 +1,9 @@
+file: Semiconductors.csv
+file_size: 1267
+pin_hash: e7d85054b42dd208
+type: csv
+title: 'Semiconductors: a pinned 60 x 2 data frame'
+description: ~
+tags: ~
+created: 20230302T174303Z
+api_version: 1.0

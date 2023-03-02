@@ -1,0 +1,9 @@
+file: Mileage.csv
+file_size: 252
+pin_hash: 44dfd15cee088131
+type: csv
+title: 'Mileage: a pinned 50 x 1 data frame'
+description: ~
+tags: ~
+created: 20230302T174129Z
+api_version: 1.0

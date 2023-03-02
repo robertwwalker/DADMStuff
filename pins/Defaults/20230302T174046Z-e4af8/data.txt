@@ -1,0 +1,9 @@
+file: Defaults.csv
+file_size: 919
+pin_hash: e4af8153158a2083
+type: csv
+title: 'Defaults: a pinned 200 x 2 data frame'
+description: ~
+tags: ~
+created: 20230302T174046Z
+api_version: 1.0

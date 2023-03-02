@@ -1,0 +1,9 @@
+file: ScarceSteady.csv
+file_size: 973
+pin_hash: 3372aed65d0bcd8a
+type: csv
+title: 'ScarceSteady: a pinned 60 x 2 data frame'
+description: ~
+tags: ~
+created: 20230302T174256Z
+api_version: 1.0

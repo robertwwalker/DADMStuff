@@ -1,0 +1,9 @@
+file: Villagers.csv
+file_size: 62174
+pin_hash: d5cf6ef68ce43794
+type: csv
+title: 'Villagers: a pinned 391 x 11 data frame'
+description: ~
+tags: ~
+created: 20230302T174012Z
+api_version: 1.0

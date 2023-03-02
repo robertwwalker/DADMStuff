@@ -1,0 +1,9 @@
+file: critic.csv
+file_size: 36668
+pin_hash: 11960e12457fb71e
+type: csv
+title: 'critic: a pinned 107 x 4 data frame'
+description: ~
+tags: ~
+created: 20230302T173851Z
+api_version: 1.0

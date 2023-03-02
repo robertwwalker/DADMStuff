@@ -1,0 +1,9 @@
+file: SSTimes.csv
+file_size: 348
+pin_hash: 3a5a8bdc311e8c69
+type: csv
+title: 'SSTimes: a pinned 36 x 2 data frame'
+description: ~
+tags: ~
+created: 20230302T174152Z
+api_version: 1.0

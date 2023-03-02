@@ -1,0 +1,9 @@
+file: datasaurus.csv
+file_size: 67728
+pin_hash: 783dfe35f7b3e55e
+type: csv
+title: 'datasaurus: a pinned 1846 x 3 data frame'
+description: ~
+tags: ~
+created: 20230302T174425Z
+api_version: 1.0

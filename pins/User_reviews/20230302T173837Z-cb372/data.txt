@@ -1,0 +1,9 @@
+file: User_reviews.csv
+file_size: 2090477
+pin_hash: cb372e347b0750e7
+type: csv
+title: 'User_reviews: a pinned 2999 x 4 data frame'
+description: ~
+tags: ~
+created: 20230302T173837Z
+api_version: 1.0

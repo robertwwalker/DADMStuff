@@ -1,0 +1,9 @@
+file: EPL.csv
+file_size: 480
+pin_hash: e9fb0b8d45ccc200
+type: csv
+title: 'EPL: a pinned 20 x 3 data frame'
+description: ~
+tags: ~
+created: 20230302T174439Z
+api_version: 1.0

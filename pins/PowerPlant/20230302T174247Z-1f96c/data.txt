@@ -1,0 +1,9 @@
+file: PowerPlant.csv
+file_size: 1779
+pin_hash: 1f96c01a48122898
+type: csv
+title: 'PowerPlant: a pinned 60 x 5 data frame'
+description: ~
+tags: ~
+created: 20230302T174247Z
+api_version: 1.0

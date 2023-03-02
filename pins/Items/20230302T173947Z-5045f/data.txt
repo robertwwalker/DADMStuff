@@ -1,0 +1,9 @@
+file: Items.csv
+file_size: 736890
+pin_hash: 5045f0b0fb66fbae
+type: csv
+title: 'Items: a pinned 4565 x 16 data frame'
+description: ~
+tags: ~
+created: 20230302T173947Z
+api_version: 1.0

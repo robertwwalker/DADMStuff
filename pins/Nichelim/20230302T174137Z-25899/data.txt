@@ -1,0 +1,9 @@
+file: Nichelim.csv
+file_size: 304
+pin_hash: 25899322819053b3
+type: csv
+title: 'Nichelim: a pinned 25 x 1 data frame'
+description: ~
+tags: ~
+created: 20230302T174137Z
+api_version: 1.0

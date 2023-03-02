@@ -1,0 +1,9 @@
+file: EquityChg.csv
+file_size: 2695
+pin_hash: 0426b7e7237e759d
+type: csv
+title: 'EquityChg: a pinned 36 x 6 data frame'
+description: ~
+tags: ~
+created: 20230302T174444Z
+api_version: 1.0
