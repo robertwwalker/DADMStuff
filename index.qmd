@@ -49,6 +49,8 @@ library(DT)
 Files.df <- data.frame(Files=Files) %>% mutate(link=paste0(paste0('<a href=',paste0("\"https://github.com/robertwwalker/DADMStuff/raw/master/",Files,"\"", sep=""),' > ', sep=""),Files,'</a>',sep=""))
 datatable(Files.df, escape = FALSE)
 ```
+I want to make these files accessible.  Apparently, the way to do this is `pins`.
+
 
 
 # References
