@@ -57,6 +57,33 @@ I am going to put the pins on github.  The repository will be: `https://raw.gith
 dir("pins/")
 ```
 
+## How to use them?
+
+First, we have to call `library(pins)`; I will also require the `tidyverse`.
+
+```{r}
+#| code-fold: show
+library(pins)
+library(tidyverse)
+board <- board_url("https://raw.githubusercontent.com/robertwwalker/DADMStuff/master/pins/")
+board %>% pin_list()
+```
+
+Acquiring a single dataset is easiest with `pin_read`.  In this case, let me grab the `EPL` data named in quotations.  Having grabbed it, I will plot it.
+
+```{r}
+#| code-fold: show
+library(ggrepel)
+board %>% pin_read("EPL") %>% 
+  ggplot() + 
+  aes(y=Points, x=Wage.Bill.milGBP, label=Team) + 
+  geom_label_repel() + 
+  theme_minimal() +
+  labs(x="Wage Bill", y="Points", title="Points and Wages")
+```
+
+
+
 # References
 
 ```{r}
