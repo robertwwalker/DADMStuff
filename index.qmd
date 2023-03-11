@@ -75,7 +75,8 @@ Acquiring a single dataset is easiest with `pin_read`.  In this case, let me gra
 ```{r}
 #| code-fold: show
 library(ggrepel)
-board %>% pin_read("EPL") %>% 
+EPL <- board %>% pin_read("EPL") 
+EPL %>% 
   ggplot() + 
   aes(y=Points, x=Wage.Bill.milGBP, label=Team) + 
   geom_label_repel() + 
