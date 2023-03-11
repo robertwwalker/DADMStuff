@@ -1,0 +1,9 @@
+file: Financials.csv
+file_size: 2689
+pin_hash: e5cf46fda3854b4b
+type: csv
+title: 'Financials.Raw: a pinned 36 x 8 data frame'
+description: ~
+tags: ~
+created: 20230311T095855Z
+api_version: 1.0

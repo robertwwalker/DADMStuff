@@ -22,6 +22,10 @@ FastFood:
 - FastFood/20230301T203611Z-cdd76/
 Fertilizer:
 - Fertilizer/20230301T201207Z-bdbdd/
+Financials.Raw:
+- Financials.Raw/20230311T095855Z-e5cf4/
+Financials.Tidy:
+- Financials.Tidy/20230311T095911Z-7aefd/
 FoodSat:
 - FoodSat/20230302T174110Z-67d95/
 GGap:

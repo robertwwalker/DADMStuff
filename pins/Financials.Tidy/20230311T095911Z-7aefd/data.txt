@@ -1,0 +1,9 @@
+file: Financials.csv
+file_size: 4561
+pin_hash: 7aefd62035886d7f
+type: csv
+title: 'Financials.Tidy: a pinned 72 x 6 data frame'
+description: ~
+tags: ~
+created: 20230311T095911Z
+api_version: 1.0
