@@ -1,0 +1,9 @@
+file: VonBort.csv
+file_size: 5013
+pin_hash: 41d4357a7fe1d60a
+type: csv
+title: 'VonBort: a pinned 280 x 4 data frame'
+description: ~
+tags: ~
+created: 20230311T102317Z
+api_version: 1.0
