@@ -1,5 +1,5 @@
 ---
-title: "Pins"
+title: "DADM Stuff: Files and Pins"
 bibliography: "bibliography.bib"
 nocite: |
      @*
@@ -26,10 +26,14 @@ format:
 knitr::opts_chunk$set(message=FALSE, warning=FALSE)
 ```
 
-Creating the pins for this repository.
+This page serves principally as a file repository for files I use in Data Analysis, (Modelling), and Decision Making (GSM 5103/GSMPR 622) -- DADM.  
+
+*NB: It also deploys what I think to be the easiest way to make the various bits of data easily available.  Though there is no context at all for this, the first note is how to create a pin for this repository.  In this case, it was largely automated by going through and reading the various file types and then writing them out given a collected list.*
 
 ```
 board <- board_temp(versioned = TRUE)
+# pin_write(obj, NameofPin, )
+board %>% pin_write(MFPerform, "MFPerform")
 ```
 
 
@@ -49,6 +53,7 @@ library(DT)
 Files.df <- data.frame(Files=Files) %>% mutate(link=paste0(paste0('<a href=',paste0("\"https://github.com/robertwwalker/DADMStuff/raw/master/",Files,"\"", sep=""),' > ', sep=""),Files,'</a>',sep=""))
 datatable(Files.df, escape = FALSE)
 ```
+
 I want to make these files accessible.  Apparently, the way to do this is `pins`.
 
 I am going to put the pins on github.  The repository will be: `https://raw.githubcontent.com/robertwwalker/DADMStuff/pins/`.  Here is a list of the pins.
@@ -62,20 +67,41 @@ dir("pins/")
 
 First, we have to call `library(pins)`; I will also require the `tidyverse`.
 
+To set this up on your own, make sure you have the two packages installed.
+
+```
+install.packages(c("pins","tidyverse"))
+```
+
+Then you will need to define `board` as the collection of pins stored here.
+
 ```{r}
 #| code-fold: show
 library(pins)
 library(tidyverse)
 board <- board_url("https://raw.githubusercontent.com/robertwwalker/DADMStuff/master/pins/")
+```
+
+Let's list the pins that are located in `board`
+
+```{r}
+#| code-fold: show
 board %>% pin_list()
 ```
 
-Acquiring a single dataset is easiest with `pin_read`.  In this case, let me grab the `EPL` data named in quotations.  Having grabbed it, I will plot it.
+Acquiring a single dataset is easiest with `pin_read`.  In this case, let me create a local object called `EPL` using the "EPL" pinned data.  
+
+```{r}
+#| code-fold: show
+EPL <- board %>% pin_read("EPL") 
+```
+
+
+Having grabbed it, I will plot it (to keep the club names from overlapping, I will deploy `ggrepel` on the labels.)
 
 ```{r}
 #| code-fold: show
 library(ggrepel)
-EPL <- board %>% pin_read("EPL") 
 EPL %>% 
   ggplot() + 
   aes(y=Points, x=Wage.Bill.milGBP, label=Team) + 
@@ -84,6 +110,7 @@ EPL %>%
   labs(x="Wage Bill", y="Points", title="Points and Wages")
 ```
 
+The process is the same for any of the pins, only renaming the object and pointing to a different "pin".
 
 
 # References
