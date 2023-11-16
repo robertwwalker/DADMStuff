@@ -32,12 +32,13 @@ This page serves principally as a file repository for files I use in Data Analys
 
 ```
 board <- board_temp(versioned = TRUE)
-# pin_write(obj, NameofPin, )
+# pin_write(obj, NameofPin)
 board %>% pin_write(MFPerform, "MFPerform")
 ```
 
+There are a number of files and file types hosted here.  All can be accessed via the following table.  In a moment, I will take some of the data files and make them particularly easy to access with R's `pins`.
 
-## The Data
+## A List of All Files
 
 ```{r}
 library(tidyverse)
@@ -89,6 +90,12 @@ Let's list the pins that are located in `board`
 board %>% pin_list()
 ```
 
+### An Aside on `pins`
+
+The [`pins`](https://pins.rstudio.com/) package is quite neat.  To the extent that there is a limitation, it is the use of flat files.  As a result, all of the data contained herein is a single row/column data file of some form or other.  If you'd like to learn more about `pins`, the [Getting Started with `pins`](https://pins.rstudio.com/articles/pins.html) on the **RStudio** website is quite useful.
+
+## Acquiring a pin
+
 Acquiring a single dataset is easiest with `pin_read`.  In this case, let me create a local object called `EPL` using the "EPL" pinned data.  
 
 ```{r}
@@ -96,6 +103,7 @@ Acquiring a single dataset is easiest with `pin_read`.  In this case, let me cre
 EPL <- board %>% pin_read("EPL") 
 ```
 
+## There is no difference to working with pins once they are local objects
 
 Having grabbed it, I will plot it (to keep the club names from overlapping, I will deploy `ggrepel` on the labels.)
 
