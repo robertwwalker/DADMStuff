@@ -36,7 +36,7 @@ board <- board_temp(versioned = TRUE)
 board %>% pin_write(MFPerform, "MFPerform")
 ```
 
-There are a number of files and file types hosted here.  All can be accessed via the following table.  In a moment, I will take some of the data files and make them particularly easy to access with R's `pins`.
+There are a number of files and file types hosted here.  All can be accessed via the following table.  In a moment, I will take some of the data files and make them particularly easy to access with R's `pins`.  It is worth noting that not everything that is here is a pin, there are a variety of different file types and pins work with `"csv", "json", "rds", "parquet", "arrow", or "qs"`.  Only the data.frame type structures are pinned here.
 
 ## A List of All Files
 
