@@ -121,8 +121,6 @@ EPL %>%
 The process is the same for any of the pins, only renaming the object and pointing to a different "pin".
 
 
-# References
-
 ```{r}
 knitr::write_bib(names(sessionInfo()$otherPkgs), file="bibliography.bib")
 ```
