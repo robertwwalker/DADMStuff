@@ -1,0 +1,10 @@
+file: AlumniGiving.rds
+file_size: 3176
+pin_hash: c4bc83d861338c5b
+type: rds
+title: 'AlumniGiving: a pinned 123 x 10 data frame'
+description: ~
+tags: ~
+urls: ~
+created: 20241118T205555Z
+api_version: 1
