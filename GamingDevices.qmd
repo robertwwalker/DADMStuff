@@ -1,0 +1,101 @@
+---
+title: "Gaming Devices"
+subtitle: "Linking Probability and Data"  
+author: "Robert W. Walker"
+date: "2025-11-04"
+format: docx
+---
+
+## Evaluating Handheld Devices: Review
+
+A leading supplier of machines for the gaming industry is considering a change in production
+methods. Video gambling is a multi-billion dollar industry and this leading supplier is
+under cost pressure from competitors that have outsourced their manufacturing and reaped
+significant cost savings. The company wishes to maintain domestic production but needs to
+find methods for reducing manufacturing (assembly line) costs. One current proposal is to
+equip members of the assembly line with handheld devices that record relevant production
+data in lieu of a current system that uses manual ticket records that require subsequent
+processing in a data entry unit. 
+
+
+```{r DataLoad, echo=FALSE, results='hide', message=FALSE}
+library(tidyverse)
+load(url("https://github.com/robertwwalker/DADMStuff/raw/master/GamingDevices.RData"))
+```
+
+
+A random sample of 36 employees from the assembly line
+were given device training and a test verifying their ability to use the handheld system; they
+were compensated to do this on a Saturday. After this, four work weeks of output data was
+recorded and their unit productivity with and without the device have been made available
+in an Excel spreadsheet. In short, the two columns of output data (Without represents the
+four week period immediately before introducing the handheld device and With represents
+the four-week period immediately after implementing the handheld device experiment). The
+profit margin per gaming device unit is $8.00. It is also worth nothing that the assembly
+line operates on a single-shift basis so that each device would be used by only one worker.
+
+1. An executive in the firm asks you to state, with 95% confidence, the average productivity of these 36 workers **Without** the hand held device. How would you
+respond?  What is the average productivity **With** the device?
+2. "Does the handheld device increase worker productivity?"  Could we provide an interval as answer?  Could we provide a probability that it does not comparing some set of alternatives?  
+3. Provide a 99% confidence interval for the average difference in productivity owing to the handheld device?
+in produced units.
+4. There are two assembly line managers that have made competing claims about the
+effect of the handheld device. Jim says that it should generate no more than 2 additional
+units over the course of the month. Jane believes that 4 or more additional units will
+be produced. These competing claims are the basis for filling a new position of head
+assembly line manager. Who should be named to this position and why would you
+name this person?
+5. Suppose the handheld devices cost $100 each. How long, given the productivity assessment that you have undertaken, would it take the company to recover the device
+investment on a per-worker basis (in four week output accounting periods)? Can you
+generate an upper bound on how long this could possibly take with 95% confidence?
+
+## Satisfaction
+
+1. Do the workers Like the tablet?
+
+2. What is a 95% confidence interval for the probability of Like?  Is there a difference between using an exact binomial and a z-test?
+
+## Coming Soon: Hiring Diagnostics
+
+The HR Department in the firm tells you that there are, at present, two diagnostics that
+are used in company hiring: a diagnostic based on general assembly line aptitude (**General**)
+and a diagnostic based on manual dexterity (**Dexterity**).  *It is worth noting that they currently produce Without the device.*  They would like you to utilize
+regression techniques to assist them in evaluating the performance of these metrics.  For now, we will analyse productivity **Without** the device as the outcome.  They want to know what best explains/predicts worker productivity.
+
+### Two-Variable Regressions
+
+They would like you to assess the impacts of General and Dexterity, respectively, on unit productivity `Without` the handheld devices.
+
+1. Plot **Dexterity** and unit productivity **Without** the device.  Is there a statistical relationship between Dexterity and unit productivity at the 95% level of confidence? How do you know?  
+2. Plot **General** and unit productivity **Without** the device. Is there a statistical relationship between General aptitude and unit productivity at
+the 95% level of confidence? How do you know?  
+3. Isolate the residuals from each regression and assess whether or not they are normal.  
+4. Does General or Dexterity better explain productivity by workers? How do you know
+this? Explain your choice and the statistical evidence that you can provide. You should
+note that the HR Department is not statistically literate so an ideal bit of evidence
+will be simple and straightforward. Pictorial is probably best. If they were to stick to a single measure, which should it be upon the basis of this evidence? They want to take action, give them a clear direction.
+
+## The Real Goal: A New Diagnostic from Multiple Regression
+
+Given our evidence on the handheld device, the HR division wants to design new hiring protocols in the presence of the handheld device `With`. You are now to estimate three regressions with With handheld device unit production as the response variable. The predictor variables will be `General` aptitude, `Dexterity`, and the individual's productivity `Without` the device, first individually.
+
+1. Graph each input-outcome pair [y is Without always]. What is the best predictor of performance With the device? What is second best?  What criterion might we deploy?  Examine the scatterplot of each input shown with productivity on y [`With`].  If given only one predictor, what would we choose?
+
+### Multiple Regression
+
+The advantage of regression techniques is the degree to which they scale.  With a ratio of 5 to 10 degrees of freedom per parameter [estimate], we can incorporate multiple factors in a relatively simple way.  Here, I want to estimate:
+
+$$With = \alpha + \beta_{d} * Dexterity + \beta_{g} * General + \beta_{w} * Without + e_{i}$$
+
+That is, I want to estimate productivity *With* the device as a function of production Without the device, Dexterity, and General and then deploy it for predictive and inferential purposes.  The HR Department wants to design the best diagnostic possible to use in hiring and they have three equal cost diagnostics to possibly deploy.
+
+1. How much of the total variation in productivity *With* the device can be accounted for by the predictors?  Does each predictor have a non-zero slope?  
+2. Isolate the residuals from these regressions; are they normal?  
+3. What is the residual standard error/deviation for this regression?  
+4. If we were to choose two of the three predictors; which would we choose?  
+5. What range of units would you expect to be produced with the handheld device, with
+95% confidence, by an assembly line worker that scores 119 on the General aptitude
+test, a worker that scores 92 on the Dexterity scale, and produced 86 units without the handheld device?  
+6. A member of the assembly line believes that their output over the four week period with the handheld device may have been significantly overcounted due to a data entry error. What subject is most likely to have had their productivity entered incorrectly in your opinion? Why do you think this?
+
+**What would you say if you were asked to re-analyse the problem without the bad datum?**
